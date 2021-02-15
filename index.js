@@ -32,10 +32,9 @@ bot.on('login',function(){
 	bot.chat("hello");
 });
 
-bot.on('time', function(time) {
-	if(nightskip == "true"){
-	if(bot.time.timeOfDay >= 13000){
-	bot.chat('/time set day')
+bot.on('message', function(message) {
+	if(message.content == "sex"){
+	bot.chat('/say sexy right?')
 	}}
     if (connected <1) {
         return;
